@@ -1,0 +1,9 @@
+<?php
+if ( isset( $pd_general_settings['floating_button_status'] ) && $pd_general_settings['floating_button_status'] != 'off' ) {
+    $floating_button_position = ( $pd_general_settings['floating_button_position'] ? $pd_general_settings['floating_button_position'] : 'bottom-left' );
+    $floating_button_show_after = ( $pd_general_settings['floating_button_show_after'] ? $pd_general_settings['floating_button_show_after'] : 'soe' );
+    ?>
+    <a class="pd-gdpr-toggle-setting <?php if ( $floating_button_position == 'top-right' ) : ?>top-0 right-0<?php elseif ( $floating_button_position == 'top-left' ) : ?>top-0 left-0<?php elseif ( $floating_button_position == 'bottom-right' ) : ?>bottom-0 right-0<?php elseif ( $floating_button_position == 'bottom-left' ) : ?>bottom-0 left-0<?php endif; ?>" <?php if ( $floating_button_show_after == 'soe' ): ?> scroll-data="<?php echo( $pd_general_settings['floating_button_scroll_offset'] ? $pd_general_settings['floating_button_scroll_offset'] : 120 ); ?>" <?php else: ?> delay="<?php echo( $pd_general_settings['floating_button_show_in_delay'] ? $pd_general_settings['floating_button_show_in_delay'] : 2000 ); ?>" <?php endif; ?>data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="home" aria-selected="true" type="<?php echo( $pd_general_settings['cookie_bar_style'] ? $pd_general_settings['cookie_bar_style'] : 'banner' ); ?>" style="background-color: <?php echo( $pd_general_settings['floating_button_color'] ? $pd_general_settings['floating_button_color'] : '#f5365c' ); ?>">
+        <i class="icofont-settings-alt"></i>
+    </a>
+<?php }; ?>

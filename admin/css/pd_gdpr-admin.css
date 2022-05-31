@@ -1,0 +1,237 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.d-none{
+    display: none;
+}
+#puredevs_export_import_settings p.submit,#puredevs_analytics_settings p.submit, #puredevs_help_settings p.submit{
+    display: none;
+}
+#puredevs_analytics_settings .form-table tr th,#puredevs_help_settings .form-table tr th{
+    width: 0;
+    display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
+.acc_trigger{
+    display: block;
+    padding:  15px;
+    background: #0073aa;
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+.acc_trigger i{
+    float: right;
+    margin-top: 5px;
+}
+.angle-up {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
+.angle-down {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.acc_card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius:0;
+}
+
+
+ul.tab{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.tab .tab-item{
+    float: left;
+    width: 33.33%;
+    margin: 0 auto;
+    text-align: center;
+}
+ul.tab .tab-item a{
+    padding: 20px 30px;
+    display: block;
+    color: black;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: none;
+    outline: none;
+}
+
+ul.tab .tab-item >.active{
+    background: #0073aa;
+    color: #ffffff;
+}
+
+/*.active{
+    display: block;
+}*/
+.hide{
+    display: none;
+}
+
+.tab-wrapper{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius:0;
+    border-top: 0 !important;
+}
+
+ul.custom-accordian{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.custom-accordian li:last-child .acc_trigger{
+    border-bottom: 0;
+}
+.plugin-title{
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+button.btn {
+    cursor: pointer;
+    background-color: #0073aa;
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+.gdpr-settings-con .group .form-table tr td input[type=text],
+.gdpr-settings-con .group .form-table tr td textarea,
+.gdpr-settings-con .group .form-table tr td select{
+    width: 50%;
+}
+.heading{
+    position: relative;
+}
+.heading td h2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.gdpr-wrapper{
+    display: flex;
+    margin-top: 25px;
+}
+
+.gdpr-wrapper h2.nav-tab-wrapper{
+    flex: 0 0 17%;
+    padding-right: 1.5em !important;
+    border-bottom: none !important;
+}
+
+.gdpr-wrapper h2.nav-tab-wrapper a{
+    display: block;
+    float: none;
+}
+
+.gdpr-wrapper h2.nav-tab-wrapper a:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.gdpr-wrapper .gdpr-settings-con {
+    flex: 1;
+}
+.gdpr-settings-con h2{
+    margin: 0;
+    font-size: 26px;
+    padding: 15px 0;
+}
+.gdpr-wrapper .gdpr-settings-con .group {
+    background: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.33);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.33);
+}
+
+
+.heading>td:not(*:root) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.heading>td h2:not(*:root) {
+    position: unset !important;
+    margin-left: -210px;
+}
+
+#puredevs_strictly_necessary_cookie_settings-tab,
+#puredevs_additional_cookie_settings-tab,
+#puredevs_3rd_party_cookie_settings-tab,
+#puredevs_test_cookie_one_settings-tab,
+#puredevs_test_cookie_two_settings-tab{
+    display: none;
+}
+
+#puredevs_strictly_necessary_cookie_settings-tab,
+#puredevs_additional_cookie_settings-tab,
+#puredevs_3rd_party_cookie_settings-tab,
+#puredevs_functional_cookie_settings-tab,
+#puredevs_required_cookies_settings-tab{
+    display: none;
+}
+
+.geo_location_api {
+    display: none;
+}
+.gdpr-settings-con .group .form-table tr td .wp-editor-wrap textarea{
+    width: 100%;
+}
